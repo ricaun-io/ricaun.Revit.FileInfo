@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.IO.Packaging;
-using System.Linq;
 using System.Text;
 
 namespace ricaun.Revit.FileInfo.StructuredStorage

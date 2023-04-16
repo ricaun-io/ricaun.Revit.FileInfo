@@ -5,10 +5,18 @@ using System.Reflection;
 
 namespace ricaun.Revit.FileInfo.StructuredStorage
 {
+    /// <summary>
+    /// StructuredStorageRoot
+    /// </summary>
     public class StructuredStorageRoot : IDisposable
     {
         StorageInfo _storageRoot;
 
+        /// <summary>
+        /// StructuredStorageRoot
+        /// </summary>
+        /// <param name="stream"></param>
+        /// <exception cref="StructuredStorageException"></exception>
         public StructuredStorageRoot(Stream stream)
         {
             try
@@ -21,6 +29,11 @@ namespace ricaun.Revit.FileInfo.StructuredStorage
             }
         }
 
+        /// <summary>
+        /// StructuredStorageRoot
+        /// </summary>
+        /// <param name="fileName"></param>
+        /// <exception cref="StructuredStorageException"></exception>
         public StructuredStorageRoot(string fileName)
         {
             try
@@ -58,6 +71,9 @@ namespace ricaun.Revit.FileInfo.StructuredStorage
 
         #region Implementation of IDisposable
 
+        /// <summary>
+        /// Dispose
+        /// </summary>
         public void Dispose()
         {
             CloseStorageRoot();
@@ -65,6 +81,9 @@ namespace ricaun.Revit.FileInfo.StructuredStorage
 
         #endregion
 
+        /// <summary>
+        /// BaseRoot
+        /// </summary>
         public StorageInfo BaseRoot
         {
             get { return _storageRoot; }
