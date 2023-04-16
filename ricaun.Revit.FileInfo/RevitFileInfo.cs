@@ -8,6 +8,12 @@ namespace ricaun.Revit.FileInfo
     public class RevitFileInfo
     {
         /// <summary>
+        /// Get RevitVersion from <paramref name="filePath"/>
+        /// </summary>
+        /// <param name="filePath"></param>
+        /// <returns></returns>
+        public static RevitVersion GetRevitVersion(string filePath) => RevitFileUtils.GetRevitVersion(filePath);
+        /// <summary>
         /// FilePath
         /// </summary>
         public string FilePath { get; }
@@ -16,7 +22,7 @@ namespace ricaun.Revit.FileInfo
         /// </summary>
         public RevitVersion Version { get; }
         /// <summary>
-        /// IsValid
+        /// IsValid Extension
         /// </summary>
         public bool IsValid { get; }
         /// <summary>

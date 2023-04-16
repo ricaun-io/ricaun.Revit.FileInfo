@@ -23,6 +23,12 @@ using ricaun.Revit.FileInfo;
 ```
 
 ```csharp
+RevitVersion revitVersion = RevitFileInfo.GetRevitVersion(filePath);
+```
+
+or
+
+```csharp
 RevitFileInfo revitFileInfo = new RevitFileInfo(filePath);
 bool isValid = revitFileInfo.IsValid;
 RevitVersion revitVersion = revitFileInfo.Version;
