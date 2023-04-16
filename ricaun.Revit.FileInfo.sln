@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ricaun.Revit.FileInfo", "ricaun.Revit.FileInfo\ricaun.Revit.FileInfo.csproj", "{011FD27F-6975-4B0F-B013-346555D8CBD4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{2C370D1B-E2CA-489D-A5D3-EA39099729D4}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ricaun.Revit.FileInfo.Tests", "ricaun.Revit.FileInfo.Tests\ricaun.Revit.FileInfo.Tests.csproj", "{0840A710-E3A9-4DA4-97FB-53A1BBCA0FFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{011FD27F-6975-4B0F-B013-346555D8CBD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{011FD27F-6975-4B0F-B013-346555D8CBD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{011FD27F-6975-4B0F-B013-346555D8CBD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{011FD27F-6975-4B0F-B013-346555D8CBD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0840A710-E3A9-4DA4-97FB-53A1BBCA0FFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0840A710-E3A9-4DA4-97FB-53A1BBCA0FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0840A710-E3A9-4DA4-97FB-53A1BBCA0FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0840A710-E3A9-4DA4-97FB-53A1BBCA0FFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44786E89-754B-4A5E-A843-001737D61C47}
+	EndGlobalSection
+EndGlobal
