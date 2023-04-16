@@ -37,7 +37,7 @@ namespace ricaun.Revit.FileInfo.StructuredStorage
         {
             rawData = null;
 
-            if (!StructuredStorageUtils.IsFileStucturedStorage(filePath))
+            if (!StructuredStorageUtils.IsFileStucturedStorage(filePath, false))
             {
                 return false;
             }

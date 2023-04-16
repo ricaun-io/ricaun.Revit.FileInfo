@@ -5,7 +5,7 @@ using System.IO;
 
 namespace ricaun.Revit.FileInfo.Tests
 {
-    public class RevitVersionInfo_Tests
+    public class RevitFileInfo_Tests
     {
         [TestCase("Files/2017/FamilyTemplate.rft", 2017)]
         [TestCase("Files/2021/FamilyTemplate.rft", 2021)]
@@ -30,10 +30,10 @@ namespace ricaun.Revit.FileInfo.Tests
         public void TestFile_Version(string filePath, int version)
         {
             filePath = Path.Combine(TestContext.CurrentContext.TestDirectory, filePath);
-            RevitVersionInfo revitVersionInfo = new RevitVersionInfo(filePath);
-            Assert.IsTrue(revitVersionInfo.IsValid);
-            Console.WriteLine(revitVersionInfo.Version);
-            Assert.IsTrue(version.Equals(revitVersionInfo.Version));
+            RevitFileInfo revitFileInfo = new RevitFileInfo(filePath);
+            Assert.IsTrue(revitFileInfo.IsValid);
+            Console.WriteLine(revitFileInfo.Version);
+            Assert.IsTrue(version.Equals(revitFileInfo.Version));
         }
         [TestCase(RevitExtension.Project)]
         [TestCase(RevitExtension.ProjectTemplate)]
@@ -41,25 +41,25 @@ namespace ricaun.Revit.FileInfo.Tests
         [TestCase(RevitExtension.FamilyTemplate)]
         public void TestFile_Extension(string extension)
         {
-            RevitVersionInfo revitVersionInfo = CreateTempFile(extension);
-            Assert.IsTrue(revitVersionInfo.IsValid);
+            RevitFileInfo revitFileInfo = CreateTempRevitFileInfo(extension);
+            Assert.IsTrue(revitFileInfo.IsValid);
         }
 
         [TestCase(".txt")]
         [TestCase(".dwg")]
         public void TestFile_NotExtension(string extension)
         {
-            RevitVersionInfo revitVersionInfo = CreateTempFile(extension);
-            Assert.IsFalse(revitVersionInfo.IsValid);
+            RevitFileInfo revitFileInfo = CreateTempRevitFileInfo(extension);
+            Assert.IsFalse(revitFileInfo.IsValid);
         }
 
-        private RevitVersionInfo CreateTempFile(string extension)
+        private RevitFileInfo CreateTempRevitFileInfo(string extension)
         {
             var filePath = Path.GetTempFileName() + extension;
             File.WriteAllText(filePath, string.Empty);
-            RevitVersionInfo revitVersionInfo = new RevitVersionInfo(filePath);
+            RevitFileInfo revitFileInfo = new RevitFileInfo(filePath);
             File.Delete(filePath);
-            return revitVersionInfo;
+            return revitFileInfo;
         }
     }
 }

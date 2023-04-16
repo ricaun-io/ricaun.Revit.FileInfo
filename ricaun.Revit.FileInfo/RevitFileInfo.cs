@@ -3,16 +3,16 @@
 namespace ricaun.Revit.FileInfo
 {
     /// <summary>
-    /// RevitVersionInfo
+    /// RevitFileInfo
     /// </summary>
-    public class RevitVersionInfo
+    public class RevitFileInfo
     {
         /// <summary>
         /// FilePath
         /// </summary>
         public string FilePath { get; }
         /// <summary>
-        /// RevitVersion
+        /// Version
         /// </summary>
         public RevitVersion Version { get; }
         /// <summary>
@@ -20,14 +20,14 @@ namespace ricaun.Revit.FileInfo
         /// </summary>
         public bool IsValid { get; }
         /// <summary>
-        /// RevitVersionInfo
+        /// RevitFileInfo
         /// </summary>
         /// <param name="filePath"></param>
-        public RevitVersionInfo(string filePath)
+        public RevitFileInfo(string filePath)
         {
             FilePath = filePath;
             Version = RevitFileUtils.GetRevitVersion(filePath);
-            IsValid = RevitFileUtils.IsValidRevitFile(filePath);
+            IsValid = RevitFileUtils.IsValidRevitFileExtension(filePath);
         }
     }
 }

@@ -12,11 +12,10 @@
 ```csharp
 using ricaun.Revit.FileInfo;
 
-RevitVersionInfo revitVersionInfo = new RevitVersionInfo(filePath);
-if (revitVersionInfo.IsValid)
-{
-	RevitVersion revitVersion = revitVersionInfo.Version;
-}
+RevitFileInfo revitFileInfo = new RevitFileInfo(filePath);
+bool isValid = revitFileInfo.IsValid;
+RevitVersion revitVersion = revitFileInfo.Version;
+
 ```
 
 ## Reference Projects  

@@ -5,6 +5,20 @@ namespace ricaun.Revit.FileInfo.Tests
     public class RevitVersion_Tests
     {
         [Test]
+        public void Test_RevitVersion_Unknown_New()
+        {
+            _ = new RevitVersion();
+            _ = new RevitVersion(0);
+        }
+
+        [Test]
+        public void Test_RevitVersion_Unknown_Implicit()
+        {
+            _ = (RevitVersion)0;
+            _ = (int)RevitVersion.Unknown;
+        }
+
+        [Test]
         public void Test_RevitVersion_Unknown_Equals()
         {
             Assert.IsTrue(RevitVersion.Unknown.Equals(0));

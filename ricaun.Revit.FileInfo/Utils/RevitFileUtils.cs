@@ -79,11 +79,11 @@ namespace ricaun.Revit.FileInfo.Utils
         }
 
         /// <summary>
-        /// IsValidRevitFile
+        /// IsValidRevitFileExtension
         /// </summary>
         /// <param name="filePath"></param>
         /// <returns></returns>
-        public static bool IsValidRevitFile(string filePath)
+        public static bool IsValidRevitFileExtension(string filePath)
         {
             var extension = Path.GetExtension(filePath)?.ToLower();
             switch (extension)

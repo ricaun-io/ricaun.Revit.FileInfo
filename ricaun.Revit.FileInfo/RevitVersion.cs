@@ -10,7 +10,7 @@
         /// </summary>
         public static RevitVersion Unknown { get; } = 0;
         private readonly int version;
-        private RevitVersion(int version)
+        public RevitVersion(int version)
         {
             this.version = version;
         }
