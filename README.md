@@ -18,7 +18,21 @@ RevitVersion revitVersion = revitFileInfo.Version;
 
 ```
 
-## Reference Projects  
+## RevitFileInfo
+
+* IsValid: Check if the file is a valid Revit file extension. `(.rvt, .rfa, .rte, .rft)`
+* Version: Get the Revit version of the file. `RevitVersion` is an `int` with the default value `RevitVersion.Unknown = 0`.
+
+### BasicFileInfo
+
+To find the version of the Revit file the `BasicFileInfoUtils` is used, and a regex is used to find the version in te `Revit Build:` or `Format:` info.
+
+* In Revit 2018 and below: `Revit Build: Autodesk Revit 2018 (Build: 20170106_1515(x64))`.
+* In Revit 2019 and above: `Format: 2019`.
+
+A Unit test is used to check if the regex is working correctly between the different Revit file versions `(2014-2024)`.
+
+## Reference Projects
 
 This project was inspired by the following projects:
 
