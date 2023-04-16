@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{2C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ricaun.Revit.FileInfo.Tests", "ricaun.Revit.FileInfo.Tests\ricaun.Revit.FileInfo.Tests.csproj", "{0840A710-E3A9-4DA4-97FB-53A1BBCA0FFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Build", "Build\Build.csproj", "{CE71F474-EBAA-4607-A510-2CB46FBEF964}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,10 @@ Global
 		{0840A710-E3A9-4DA4-97FB-53A1BBCA0FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0840A710-E3A9-4DA4-97FB-53A1BBCA0FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0840A710-E3A9-4DA4-97FB-53A1BBCA0FFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE71F474-EBAA-4607-A510-2CB46FBEF964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE71F474-EBAA-4607-A510-2CB46FBEF964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE71F474-EBAA-4607-A510-2CB46FBEF964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE71F474-EBAA-4607-A510-2CB46FBEF964}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

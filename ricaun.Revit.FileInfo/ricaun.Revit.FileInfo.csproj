@@ -38,7 +38,7 @@
   <PropertyGroup>
     <Company>ricaun</Company>
     <Authors>Luiz Henrique Cassettari</Authors>
-    <Description>Utils to work with Revit installation folder and ApplicationPlugins.</Description>
+    <Description>Package to check the version of an Autodesk Revit file without opening.</Description>
     <CopyrightYears>$([System.DateTime]::Now.ToString('yyyy'))</CopyrightYears>
   </PropertyGroup>
 

@@ -8,6 +8,7 @@
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Build](https://github.com/ricaun-io/ricaun.Revit.FileInfo/actions/workflows/Build.yml/badge.svg)](https://github.com/ricaun-io/ricaun.Revit.FileInfo/actions)
 [![.NET Framework 4.0](https://img.shields.io/badge/.NET%20Framework%204.0-blue.svg)](https://github.com/ricaun-io/ricaun.Revit.FileInfo)
+[![Release](https://img.shields.io/nuget/v/ricaun.Revit.FileInfo?logo=nuget&label=release&color=blue)](https://www.nuget.org/packages/ricaun.Revit.FileInfo)
 
 ## PackageReference
 
