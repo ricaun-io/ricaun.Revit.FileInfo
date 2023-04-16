@@ -2,12 +2,12 @@
 
 `ricaun.Revit.FileInfo` library allows to check the version of an Autodesk Revit file `(.rvt, .rfa, .rte, .rft)` without opening.
 
-[![Revit 2024](https://img.shields.io/badge/Revit-2024-blue.svg)](../..)
-[![Visual Studio 2022](https://img.shields.io/badge/Visual%20Studio-2022-blue)](../..)
+[![Revit 2024](https://img.shields.io/badge/Revit-2024-blue.svg)](https://github.com/ricaun-io/ricaun.Revit.FileInfo)
+[![Visual Studio 2022](https://img.shields.io/badge/Visual%20Studio-2022-blue)](https://github.com/ricaun-io/ricaun.Revit.FileInfo)
 [![Nuke](https://img.shields.io/badge/Nuke-Build-blue)](https://nuke.build/)
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Build](../../actions/workflows/Build.yml/badge.svg)](../../actions)
-[![.NET Framework 4.0](https://img.shields.io/badge/.NET%20Framework%204.0-blue.svg)](../..)
+[![Build](https://github.com/ricaun-io/ricaun.Revit.FileInfo/actions/workflows/Build.yml/badge.svg)](https://github.com/ricaun-io/ricaun.Revit.FileInfo/actions)
+[![.NET Framework 4.0](https://img.shields.io/badge/.NET%20Framework%204.0-blue.svg)](https://github.com/ricaun-io/ricaun.Revit.FileInfo)
 
 ## PackageReference
 
@@ -57,4 +57,4 @@ This project is [licensed](LICENSE) under the [MIT Licence](https://en.wikipedia
 
 ---
 
-Do you like this project? Please [star this project on GitHub](../../stargazers)!
+Do you like this project? Please [star this project on GitHub](https://github.com/ricaun-io/ricaun.Revit.FileInfo/stargazers)!
