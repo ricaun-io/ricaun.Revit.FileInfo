@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net40</TargetFramework>
@@ -10,4 +10,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
 
+  <ItemGroup>
+    <InternalsVisibleTo Include="$(PackageId).Tests" />
+  </ItemGroup>
+  
 </Project>

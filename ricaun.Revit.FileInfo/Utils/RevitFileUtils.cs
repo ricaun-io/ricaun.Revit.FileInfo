@@ -56,7 +56,7 @@ namespace ricaun.Revit.FileInfo.Utils
         }
 
         /// <summary>
-        /// Regex to get the version: "Format: 2024"
+        /// Regex to get the version: "Format: 2019"
         /// <code>Revit File in Version +2019</code>
         /// </summary>
         /// <param name="input"></param>
