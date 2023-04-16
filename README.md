@@ -1,5 +1,7 @@
 ﻿# ricaun.Revit.FileInfo
 
+`ricaun.Revit.FileInfo` library allows knowing the version of an Autodesk Revit file `(.rvt, .rfa, .rte, .rft)` without opening.
+
 [![Revit 2024](https://img.shields.io/badge/Revit-2024-blue.svg)](../..)
 [![Visual Studio 2022](https://img.shields.io/badge/Visual%20Studio-2022-blue)](../..)
 [![Nuke](https://img.shields.io/badge/Nuke-Build-blue)](https://nuke.build/)
