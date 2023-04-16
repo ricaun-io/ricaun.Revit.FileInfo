@@ -22,7 +22,7 @@ namespace ricaun.Revit.FileInfo
         /// </summary>
         public RevitVersion Version { get; }
         /// <summary>
-        /// IsValid Extension
+        /// Is Valid File Extension (.rvt, .rfa, .rte, .rft)
         /// </summary>
         public bool IsValid { get; }
         /// <summary>
